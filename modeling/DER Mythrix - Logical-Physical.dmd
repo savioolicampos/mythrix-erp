@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DER Mythrix" id="90E94286-851D-C186-4C27-D7C86DC4A403" version="3.5">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-09-06 02:56:02 UTC</createdTime>
+<ownerDesignName>DER Conceitual</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>90E94286-851D-C186-4C27-D7C86DC4A403</designId>
+</OSDM_Design>
