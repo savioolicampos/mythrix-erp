@@ -271,8 +271,8 @@ CREATE TABLE IF NOT EXISTS partner (
     name VARCHAR(200) NOT NULL COMMENT 'Nome completo do parceiro.',
     document VARCHAR(14) NOT NULL COMMENT 'Nº do documento de identificação do parceiro.',
     document_type ENUM('CPF', 'CNPJ') NOT NULL COMMENT 'Tipo do documento de identificação do parceiro (CPF/CNPJ).',
-    email VARCHAR(254) NULL COMMENT 'E-mail principal do parceiro.',
-    alt_email VARCHAR(254) NULL COMMENT 'E-mail alternativo do parceiro.',
+    email VARCHAR(255) NULL COMMENT 'E-mail principal do parceiro.',
+    alt_email VARCHAR(255) NULL COMMENT 'E-mail alternativo do parceiro.',
     main_phone VARCHAR(25) NULL COMMENT 'Telefone principal do parceiro.',
     alt_phone VARCHAR(25) NULL COMMENT 'Telefone alternativo do parceiro.',
     status ENUM('A', 'T', 'S') NOT NULL DEFAULT 'A'
@@ -397,7 +397,7 @@ COMMENT = 'Endereços associados aos parceiros do negócio.';
 CREATE TABLE IF NOT EXISTS user_authentication (
 	id INT UNSIGNED NOT NULL COMMENT 'Identificador do parceiro associado ao usuário.',
     username VARCHAR(50) NOT NULL COMMENT 'Nome de usuário utilizado na autenticação.',
-    email VARCHAR(254) NOT NULL COMMENT 'E-mail utilizado na autenticação de usuário.',
+    email VARCHAR(255) NOT NULL COMMENT 'E-mail utilizado na autenticação de usuário.',
     phone VARCHAR(25) NOT NULL COMMENT 'Telefone utilizado na autenticação de usuário.',
     password_hash VARCHAR(255) NOT NULL COMMENT 'Hash da senha do usuário.',
     authentication_status ENUM('A', 'E', 'L', 'RR') NOT NULL DEFAULT 'A'

@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="219158F0-2435-2195-087A-0A53F317F70B" name="PARTNER">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Parceiros do negócio.]]></comment>
+<generatorID>7212BE0B-F822-251A-34F5-D50F9A0104AF</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<abbreviation>PARTNER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1F643048-052F-D2A4-4050-BBE4F58BA582">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do parceiro.]]></comment>
+<generatorID>4B7DFD8F-C5AF-5A87-A835-34D89A6E8859</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="F71C8A6C-41E6-8159-09FF-E15DA4129081">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Nome completo do parceiro.]]></comment>
+<generatorID>D85CCF99-4BCE-C457-FDDC-9CC47F169ADB</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="document" id="53C356F8-83F4-AACE-CCA6-23782E7AFE81">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-19 18:37:36 UTC</createdTime>
+<comment><![CDATA[Número do documento de identificação do parceiro.]]></comment>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="document_type" id="19AD82C2-ED2B-952F-5E7F-2D74ECCDA50F">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-19 18:38:25 UTC</createdTime>
+<comment><![CDATA[Tipo do documento de identificação do parceiro (CPF/CNPJ).]]></comment>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="5E940ACE-C420-5650-D84C-2D4751C5944D">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[E-mail principal do parceiro.]]></comment>
+<generatorID>8A1E7022-B845-6CC7-C233-4264A03DD12C</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_email" id="C21878E5-AC66-2D08-1CDE-49D58013B92C">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[E-mail alternativo do parceiro.]]></comment>
+<generatorID>FF9F35C2-6120-3E6F-3938-833CE367473E</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="main_phone" id="E97A9AA0-FBA7-8F47-B037-63813A897C78">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Telefone principal do parceiro.]]></comment>
+<generatorID>8DC22884-3ADC-DC65-B36A-8E356E505E8E</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_phone" id="180BBAF6-AA56-63AC-4AD5-A21F969677D1">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Telefone alternativo do parceiro.]]></comment>
+<generatorID>319D5BAF-B913-8132-736E-D3D7996A74BA</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="C2C3F609-68A6-5A98-5225-1D426CB26467">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-26 21:19:51 UTC</createdTime>
+<comment><![CDATA[Situação do parceiro no sistema: A=Active, T=Terminated, S=Suspended.]]></comment>
+<notes><![CDATA[DEFAULT = 'A']]></notes>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="person_type" id="3E100265-F26D-1749-3CA5-4D224880545D">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Tipo de pessoa legal: NP=Natural Person, LE=Legal Entity.]]></comment>
+<generatorID>1728A8FB-5B7C-4A79-9AED-0C0CD271D000</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_opt_in" id="540B65E5-53C0-953F-04CC-5A1E45D22F7C">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Permissão para receber comunicação por e-mail: Y=Yes, N=No.]]></comment>
+<generatorID>1948E257-503B-D0D4-BCB9-4C553B35DA6A</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="whatsapp_opt_in" id="5B6CF4E7-1F16-040F-8D70-D0E3FFC0DAC7">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Permissão para receber comunicação por WhatsApp: Y=Yes, N=No.]]></comment>
+<generatorID>4D888F02-4CC4-319D-F220-2A4287443957</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sms_opt_in" id="DD0BA43C-4C0D-6F9D-92A6-29C7E02A8490">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Permissão para receber comunicação por SMS: Y=Yes, N=No.]]></comment>
+<generatorID>473AF8EC-118B-C777-BA30-6B2DC2E3E33B</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="media_file" id="7EC0546D-71E6-0798-5694-08924CEAB567">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:35:58 UTC</createdTime>
+<comment><![CDATA[Identificador do arquivo de mídia associado ao parceiro.]]></comment>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E016E53-621B-AAD6-EDB4-23EE6A84C065" referredColumn="672DF24F-DE75-6207-F106-199B32214E09"/>
+</associations>
+</Column>
+<Column name="updated_at" id="8768F81D-6CC2-78B3-6615-248E521F6460">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Data/hora da última alteração no cadastro do parceiro.]]></comment>
+<generatorID>1CF01606-2C4F-36C1-E568-42748E5A4D99</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="8F5DBE9E-7BBC-0D44-CD00-CB4C2BD9363C">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Data/hora do cadastro do parceiro.]]></comment>
+<generatorID>3EC4251A-C6F2-7AA8-7136-C5B631260247</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_updated_info" id="76628A5C-C1AD-ED03-5A03-70CFF15A4705">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Estado anterior dos dados que foram alterados na última atualização do cadastro do parceiro.]]></comment>
+<generatorID>9E83ECE3-90BE-C514-8570-99070EA267AD</generatorID>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EBF7F0F-BA41-AAE5-FB10-C033A61207A1" name="pk_partner">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="1F643048-052F-D2A4-4050-BBE4F58BA582"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="011BBEB5-F938-C7A6-90BD-00D3242E14C3" name="uq_partner_document">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-19 18:40:09 UTC</createdTime>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53C356F8-83F4-AACE-CCA6-23782E7AFE81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5A2134E-4344-AEF5-B0EA-FE3761F12304" name="fk_partner_media_file">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:35:58 UTC</createdTime>
+<ownerDesignName>DER Mythrix - Logical-Physical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EC0546D-71E6-0798-5694-08924CEAB567"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
