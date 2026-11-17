@@ -278,17 +278,24 @@ CREATE TABLE IF NOT EXISTS partner (
     status ENUM('A', 'T', 'S') NOT NULL DEFAULT 'A'
 		COMMENT 'Situação do parceiro no sistema: A=Active, T=Terminated, S=Suspended.',
     person_type ENUM('NP', 'LE') NOT NULL COMMENT 'Tipo de pessoa legal: NP=Natural Person, LE=Legal Entity.',
-    email_opt_in ENUM('Y', 'N') NOT NULL DEFAULT 'N' COMMENT 'Permissão para receber comunicação por e-mail: Y=Yes, N=No.',
-    whatsapp_opt_in ENUM('Y', 'N') NOT NULL DEFAULT 'N' COMMENT 'Permissão para receber comunicação por WhatsApp: Y=Yes, N=No.',
-    sms_opt_in ENUM('Y', 'N') NOT NULL DEFAULT 'N' COMMENT 'Permissão para receber comunicação por SMS: Y=Yes, N=No.',
-    media_file INT UNSIGNED NULL COMMENT 'Identificador do arquivo de mídia associado ao parceiro.',
+    email_opt_in BOOLEAN NOT NULL DEFAULT FALSE COMMENT 'Autorização  para receber comunicação por e-mail.',
+    whatsapp_opt_in BOOLEAN NOT NULL DEFAULT FALSE COMMENT 'Autorização para receber comunicação por WhatsApp.',
+    sms_opt_in BOOLEAN NOT NULL DEFAULT FALSE COMMENT 'Autorização para receber comunicação por SMS.',
+    media_file_id INT UNSIGNED NULL COMMENT 'Identificador do arquivo de mídia associado ao parceiro.',
     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 		COMMENT 'Data/hora da última alteração no cadastro do parceiro.',
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Data/hora do cadastro do parceiro.',
     last_updated_info VARCHAR(255) NULL
 		COMMENT 'Estado anterior dos dados que foram alterados na última atualização do cadastro do parceiro.',
     
-    CONSTRAINT pk_partner PRIMARY KEY (id)
+    CONSTRAINT pk_partner PRIMARY KEY (id),
+    CONSTRAINT uq_partner_document UNIQUE (document),
+    CONSTRAINT uq_partner_media_file_id UNIQUE (media_file_id),
+    CONSTRAINT fk_partner_media_file
+		FOREIGN KEY (media_file_id)
+        REFERENCES media_file (id)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE
 ) ENGINE = InnoDB
 COMMENT = 'Cadastro central de pessoas físicas e jurídicas relacionadas ao negócio.';
 

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45F3A582-F127-BD15-426C-F1E9F1985B39" name="ITEM_TYPE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Tipos que classificam um item ou determinam seu estado.]]></comment>
+<generatorID>1B258C84-CC30-B330-D403-BFFDAEF959A6</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>ITEM_TYPE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="10486C03-0F83-3E8F-A678-4B25C0344D5B">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do tipo do item.]]></comment>
+<generatorID>B72F4CE0-4E1C-B6B2-3388-7758AF7B6515</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="753F138E-974B-CA60-A650-935C5FF2BC86">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Descrição do tipo do item.]]></comment>
+<generatorID>3DD1153E-A48A-7EC9-DA18-0943E085E153</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38531918-479A-64CB-B0F7-3C26CD9A23F3" name="pk_item_type">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="10486C03-0F83-3E8F-A678-4B25C0344D5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BACA657-FB20-8E60-2505-0D35188BBDC1" name="uq_item_type_type">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-14 15:17:10 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="753F138E-974B-CA60-A650-935C5FF2BC86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

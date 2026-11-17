@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_product_item" directorySegmentName="seg_0" id="02DA2D94-25C1-107C-E842-FEB0BDC1EA5C">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada ITEM pode ser um e somente um PRODUCT.
+Cada PRODUCT deve ser um e somente um ITEM.]]></comment>
+<generatorID>1475A203-1D19-2C55-0F2E-40DE92836406</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<dominantRole>ACDCB589-02ED-9C8B-5129-D978B78B7539</dominantRole>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ACDCB589-02ED-9C8B-5129-D978B78B7539</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>730CBD3A-0D80-24AF-714C-D8DA743ACE1A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

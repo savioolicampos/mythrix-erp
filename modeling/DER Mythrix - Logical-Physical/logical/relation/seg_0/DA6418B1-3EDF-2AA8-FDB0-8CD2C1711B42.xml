@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_supplier_partner" directorySegmentName="seg_0" id="DA6418B1-3EDF-2AA8-FDB0-8CD2C1711B42">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada PARTNER pode ser um e somente um SUPPLIER.
+Cada SUPPLIER deve ser um e somente um PARTNER.]]></comment>
+<generatorID>9E556E4A-D2E3-2B83-4437-F7A963BD1045</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<dominantRole>D29BED39-85CD-F729-BC2F-7B3DB32AAF6F</dominantRole>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D29BED39-85CD-F729-BC2F-7B3DB32AAF6F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>015AC98B-AE85-E4A9-9CFF-36BC62F4B863</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

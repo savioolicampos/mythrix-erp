@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="05F0E93D-95D8-F931-0C7F-54CD518FC4B2" containerWithKeyObject="91AB0007-9A6E-0EF8-FAE3-5EBCE15470B0" localFKIndex="0663A60A-FF12-6082-FDED-24FAF5613F15" name="fk_stock_movement_document">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:49:20 UTC</createdTime>
+<generatorID>5C40E401-CB73-27A5-1652-E75B319F1432</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>DOCUMENT</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>BEDB0777-5670-3254-F1EC-78C8A2BE8586</referredTableID>
+<keyObject>8E33775C-5AB0-3201-FC55-77E07B5FD5B8</keyObject>
+<referredKeyID>8E33775C-5AB0-3201-FC55-77E07B5FD5B8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

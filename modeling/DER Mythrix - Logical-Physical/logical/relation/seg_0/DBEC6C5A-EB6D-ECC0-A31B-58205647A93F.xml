@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_address_partner" directorySegmentName="seg_0" id="DBEC6C5A-EB6D-ECC0-A31B-58205647A93F">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada PARTNER pode ter um ou vários ADDRESS.
+Cada ADDRESS deve pertencer a um e somente um PARTNER.]]></comment>
+<generatorID>863BE34A-B59D-7EF4-86F7-18A634063E3B</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D29BED39-85CD-F729-BC2F-7B3DB32AAF6F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FAD49FD0-C38F-CA65-94F2-68F90DB76E00</targetEntity>
+<transferable>true</transferable>
+</Relation>

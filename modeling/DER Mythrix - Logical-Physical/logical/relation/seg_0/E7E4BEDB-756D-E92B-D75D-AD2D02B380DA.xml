@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_customer_partner" directorySegmentName="seg_0" id="E7E4BEDB-756D-E92B-D75D-AD2D02B380DA">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada PARTNER pode ser um e somente um CUSTOMER.
+Cada CUSTOMER deve ser um e somente um PARTNER.]]></comment>
+<generatorID>29C1F9D2-6BD0-C854-C20B-A7D39EDA861E</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<dominantRole>D29BED39-85CD-F729-BC2F-7B3DB32AAF6F</dominantRole>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D29BED39-85CD-F729-BC2F-7B3DB32AAF6F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>12E30E71-8524-0DBA-88A2-C7FDEA9D507E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

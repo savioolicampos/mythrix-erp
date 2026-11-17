@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7613ECD2-E675-863A-D902-83CC6A4B4ABE" name="ADDRESS">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Endereços associados aos parceiros do negócio.]]></comment>
+<generatorID>F9489BCF-91DD-7C3F-5E6F-A85207790202</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>ADDRESS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3E58F011-7BA5-7A5E-440F-A2793895F996">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do endereço.]]></comment>
+<generatorID>309840A9-F569-247B-1640-D13A0F5259CD</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="partner_id" id="EE218660-B06F-E45E-F816-E863966867E5">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 18:43:15 UTC</createdTime>
+<comment><![CDATA[Identificador do parceiro associado ao endereço.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="863BE34A-B59D-7EF4-86F7-18A634063E3B" referredColumn="1F643048-052F-D2A4-4050-BBE4F58BA582"/>
+</associations>
+</Column>
+<Column name="address_line" id="498F55A7-A0D5-9062-7AB7-25C7FAC4238B">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Logradouro do endereço.]]></comment>
+<generatorID>6F867FB9-45FF-8246-46C9-F8A0FD9CEE81</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number" id="2A660FB4-64DF-3145-F608-C4FE6BD2FB3F">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Número do imóvel ou identificação equivalente.]]></comment>
+<generatorID>EB468E95-239F-5C97-39E6-82349B31D56A</generatorID>
+<notes><![CDATA[DEFAULT = S/N]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="complement" id="2CBAF95E-DA9E-DAAA-FE73-3AD7974C9F13">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Complemento do endereço.]]></comment>
+<generatorID>32542475-0D1E-C065-4648-604B46BF3F20</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="80E65BCA-3B76-4B48-A7BE-82F51B0C0EEC">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Cidade do endereço.]]></comment>
+<generatorID>6283F416-1165-C0DD-93BA-AE5AD1D28AEF</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="A0906DC2-414B-3E2D-3F4C-58461B31F9C3">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Sigla do estado ou região administrativa.]]></comment>
+<generatorID>A052687B-F5A2-335B-66DE-74922889DAE4</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="postal_code" id="B49BD9AF-2104-8D0F-10D9-BC8699C23A58">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Código postal do endereço.]]></comment>
+<generatorID>E306BBD9-F22F-965A-2B98-456683AF6A77</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="2102965B-3F9F-1F56-A74B-980F300D8221">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Código do país.]]></comment>
+<generatorID>250F002A-B862-31C3-E686-7CF6633022B0</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address_type" id="17376029-2719-486A-BAB1-0869EE9AB98F">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Tipo do endereço: R=Residential, C=Commercial.]]></comment>
+<generatorID>A12CF77E-7BA0-F4D1-84A4-86A1549BB95F</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address_purpose" id="9C36D6B4-65A0-B5C1-E993-F2AE1B6B0E60">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-21 15:41:26 UTC</createdTime>
+<comment><![CDATA[Finalidade do endereço: B=Billing, S=Shipping.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73512D97-8BC6-B52E-48EF-79B39C168F4E" name="pk_address">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>7A897013-CEBA-16BF-5DEC-453A2E150D49</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E58F011-7BA5-7A5E-440F-A2793895F996"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B163E5F3-E24C-9B0E-5A4B-AAA1F91A0754" name="fk_address_partner">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>A16FEE95-C2DB-8A23-7F03-51EF6A5C62B6</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE218660-B06F-E45E-F816-E863966867E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

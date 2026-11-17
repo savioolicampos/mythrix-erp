@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6B31E79C-08FE-4635-EDDC-073DDB6BF9E5" containerWithKeyObject="91AB0007-9A6E-0EF8-FAE3-5EBCE15470B0" localFKIndex="A7C2DFDC-C81A-C0DE-1D1D-7B70569C6D1B" name="fk_stock_movement_stock">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Cada STOCK deve ter um ou vários STOCK_MOVEMENT associados.
+Cada STOCK_MOVEMENT deve ter um e somente um STOCK associado.]]></comment>
+<generatorID>13097270-4163-A38D-FE07-6F874D22AC76</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>STOCK</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>8FC4B1BE-6DB9-537A-7DEB-E30B253D3A59</referredTableID>
+<keyObject>1FDBC1B5-E4E8-BD03-F843-1BEEAF5ACED6</keyObject>
+<referredKeyID>1FDBC1B5-E4E8-BD03-F843-1BEEAF5ACED6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

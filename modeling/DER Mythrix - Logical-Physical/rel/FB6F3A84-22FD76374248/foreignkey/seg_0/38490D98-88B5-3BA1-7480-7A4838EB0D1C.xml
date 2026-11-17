@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38490D98-88B5-3BA1-7480-7A4838EB0D1C" containerWithKeyObject="608E2285-620B-713E-6F78-22899DF0ADE4" localFKIndex="B6E0E38D-9760-F9D2-E4EA-A7525C6A949B" name="fk_asset_item">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Cada ITEM pode ser um e somente um ASSET.
+Cada ASSET deve ser um e somente um ITEM.]]></comment>
+<generatorID>237E04C3-34C6-7AA3-BDA4-8AC531F215ED</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>ITEM</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>B16509A2-E17B-B774-3D27-F5958D96832A</referredTableID>
+<keyObject>4865D96A-D9C6-161D-F63F-7FF281D09AA6</keyObject>
+<referredKeyID>4865D96A-D9C6-161D-F63F-7FF281D09AA6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

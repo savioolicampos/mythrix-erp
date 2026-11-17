@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FD3A63C4-C7BC-9A71-82A4-D3FA807CC9D9" containerWithKeyObject="2A51D43C-0965-D051-5B5D-C99515F58DE3" localFKIndex="0B011001-551F-752D-77AD-0EF0407CFAF0" name="fk_purchase_order_document">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:48:45 UTC</createdTime>
+<comment><![CDATA[Cada DOCUMENT pode ser um e somente um PURCHASE_ORDER.
+Cada PURCHASE_ORDER deve ser um e somente um DOCUMENT.]]></comment>
+<generatorID>5C40E401-CB73-27A5-1652-E75B319F1432</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>DOCUMENT</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>BEDB0777-5670-3254-F1EC-78C8A2BE8586</referredTableID>
+<keyObject>8E33775C-5AB0-3201-FC55-77E07B5FD5B8</keyObject>
+<referredKeyID>8E33775C-5AB0-3201-FC55-77E07B5FD5B8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

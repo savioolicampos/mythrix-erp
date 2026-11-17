@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2F016EF0-4389-837B-A783-8B2861B98D02" containerWithKeyObject="CAABF2B6-E908-1A54-C83E-DFCFCED9CE5D" localFKIndex="D56C5AF5-B64A-FC6C-4CE5-DF810E7057C0" name="fk_product_product_category">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Cada PRODUCT deve ter um e somente um PRODUCT_CAREGORY.
+Cada PRODUCT_CATEGORY pode ter um ou vários PRODUCT associados.]]></comment>
+<generatorID>C03FAF0C-A6F7-0AE1-C327-048167D8AB17</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>PRODUCT_CATEGORY</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>FEB8BA82-D376-8ED8-8D20-7DF4DD171EBB</referredTableID>
+<keyObject>EB543C68-A6E8-3AED-BD10-26B08B52DEB3</keyObject>
+<referredKeyID>EB543C68-A6E8-3AED-BD10-26B08B52DEB3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

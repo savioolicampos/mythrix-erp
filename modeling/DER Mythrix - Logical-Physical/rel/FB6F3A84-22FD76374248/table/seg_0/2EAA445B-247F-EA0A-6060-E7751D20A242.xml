@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EAA445B-247F-EA0A-6060-E7751D20A242" name="ITEM_ATTRIBUTE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Valores das características adicionais de cada item.]]></comment>
+<generatorID>00591B13-29E4-6838-980C-A237F37B8C60</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<ordsAlias>item_attr</ordsAlias>
+<abbreviation>ITEM_ATTRIBUTE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="item_id" id="612C3570-C834-1526-9B39-0FB26E4E02B3">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador do item.]]></comment>
+<generatorID>C1583E76-5992-7605-C4CF-1DD424A236E9</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64CC363E-E9BF-6E56-39F9-668F9F3ED929" referredColumn="2C055E90-B178-8724-42A7-8C128707E19C"/>
+</associations>
+</Column>
+<Column name="attribute_id" id="828C34B9-E9AD-2B13-28A9-C40B0DDFC033">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador do atributo.]]></comment>
+<generatorID>E4BD730A-DC72-EB47-D3E5-4AC2EDB4E81E</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="146A0CA3-15B2-BECD-0B4F-96BD89D8BE6F" referredColumn="86C2BA1C-B504-DE3F-4762-C352C023F2EA"/>
+</associations>
+</Column>
+<Column name="value" id="B343A848-C2B2-FA69-5320-1FDB8823540D">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Valor da caracteística adicional do item.]]></comment>
+<generatorID>6D2A4392-264C-0E35-86C8-D4CB552886BB</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DB1BDE9-86B3-33B5-850F-E1BD837BC83C" name="pk_item_attribute">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>F5F54244-7133-4376-017A-C021BC4FC2A6</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="612C3570-C834-1526-9B39-0FB26E4E02B3"/>
+<colUsage columnID="828C34B9-E9AD-2B13-28A9-C40B0DDFC033"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDD99D31-56CF-144A-D93F-0B1F4CB8DD23" name="fk_item_attribute_attribute">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>705F6A9A-EF46-EFFF-9518-DD350C423588</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="828C34B9-E9AD-2B13-28A9-C40B0DDFC033"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18294D39-3361-7A66-4405-DBDE6F9C33A8" name="fk_item_attribute_item">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>12123242-5381-5737-F2D9-91CB6EB6EB4B</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="612C3570-C834-1526-9B39-0FB26E4E02B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_item_image_item" directorySegmentName="seg_0" id="0D82D00E-E494-BF8B-4353-809D54D864A6">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<generatorID>D0EA682F-711A-F4B2-4555-CD77AB3B32F8</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ACDCB589-02ED-9C8B-5129-D978B78B7539</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>15669376-55E9-DE1A-9736-91DF6DE6245E</targetEntity>
+<transferable>true</transferable>
+</Relation>

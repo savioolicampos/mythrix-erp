@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6E016E53-621B-AAD6-EDB4-23EE6A84C065" containerWithKeyObject="219158F0-2435-2195-087A-0A53F317F70B" localFKIndex="B5A2134E-4344-AEF5-B0EA-FE3761F12304" name="fk_partner_media_file">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:35:58 UTC</createdTime>
+<comment><![CDATA[Cada MEDIA_FILE deve estar associado a um e somente um PARTNER.
+Cada PARTNER poder ter um e somente um MEDIA_FILE.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>MEDIA_FILE</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>503EE0E9-2CE0-E47E-E302-23E5A302E0F1</referredTableID>
+<keyObject>CBC557D9-7AE0-1542-98D1-4EB0B87F094F</keyObject>
+<referredKeyID>CBC557D9-7AE0-1542-98D1-4EB0B87F094F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

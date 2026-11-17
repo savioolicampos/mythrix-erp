@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_stock_movement_stock" directorySegmentName="seg_0" id="E4A47F79-1E1A-812C-6D24-388A7E6AE020">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada STOCK deve ter um ou vários STOCK_MOVEMENT associados.
+Cada STOCK_MOVEMENT deve ter um e somente um STOCK associado.]]></comment>
+<generatorID>6B31E79C-08FE-4635-EDDC-073DDB6BF9E5</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>04DAE1A2-B9C8-BB7A-128A-557C00029F32</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D522FEC7-F978-7CF7-CBD4-20BFFAFA5300</targetEntity>
+<transferable>true</transferable>
+</Relation>
