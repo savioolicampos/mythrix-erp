@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_sales_order_document" directorySegmentName="seg_0" id="F9F3371A-B627-2025-9C51-097FB16982F8">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<generatorID>70058B26-3BDB-C411-55DF-4A6E41FF708B</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<sourcePk>A0E72AC3-32B8-5A0E-B52C-529A7066226D</sourcePk>
+<dominantRole>0EC9C893-EBE7-8880-2D1E-4D94C72A01E3</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0EC9C893-EBE7-8880-2D1E-4D94C72A01E3</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3F2EE42F-4162-6DE9-9577-CC75C6B391AD</targetEntity>
+<transferable>true</transferable>
+</Relation>

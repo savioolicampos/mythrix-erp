@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="04DAE1A2-B9C8-BB7A-128A-557C00029F32" name="STOCK">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Controle de estoque por item.]]></comment>
+<generatorID>8FC4B1BE-6DB9-537A-7DEB-E30B253D3A59</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>STOCK</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="99C17403-DF7D-4CE3-8AFE-DC164A00F900">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Identificador único do controle de estoque.]]></comment>
+<generatorID>53DCD50C-804C-23D6-6DB5-13BC59CCD95D</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_id" id="633B05A1-25DE-08E2-5D1F-F69FCD722089">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Id do item de estoque.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="balance" id="B6E5CAB2-5296-71D2-ABB9-F7A275FFBB14">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Saldo do item em estoque (R$).]]></comment>
+<generatorID>59326811-A317-3957-D023-F15DC2492D5F</generatorID>
+<notes><![CDATA[Esse saldo deve ser dinamicamente atualizado com base nas movimentações de estoque para cada item dentro do sistema.]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock_quantity" id="AE82B86D-4ACC-59B0-3A44-1B30FDB75AB9">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Quantidade do item em estoque.]]></comment>
+<generatorID>2A0F00C8-9090-A995-CC48-D16B2638D131</generatorID>
+<notes><![CDATA[Essa quantidade deve ser dinamicamente atualizada com base nas movimentações de estoque para cada item dentro do sistema.]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reserved_quantity" id="206553CA-D704-50DC-8749-6E7623F32F7D">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Quantidade reservada do item no estoque.]]></comment>
+<generatorID>A268AA00-6981-FBF5-8DCC-AFCEC9E1B8F4</generatorID>
+<notes><![CDATA[DEFAULT = 0]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="updated_at" id="1CA72526-A1F6-2F65-A917-C1D94920D010">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Data/hora de atualização do estoque do item.]]></comment>
+<generatorID>5B9BB8E0-C6ED-0EEF-E92A-4D7D6C1CF699</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created_at" id="2FD86A57-E21D-F793-DC1C-9D8EC5AE0840">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Data/hora da entrada do item no estoque.]]></comment>
+<generatorID>D106F1E3-0880-34B6-921A-28856072C666</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5E2174BE-78EA-03C4-F181-4EEA828C3097" name="uq_stock_item">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<generatorID>DC33DFDF-C224-BB2E-EFB2-244987486338</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<newElementsIDs>633B05A1-25DE-08E2-5D1F-F69FCD722089</newElementsIDs>
+<usedAttributes>
+<attributeRef>633B05A1-25DE-08E2-5D1F-F69FCD722089</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D6276909-6613-EF81-A1EA-8CFC2F0EEE82" name="pk_stock">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:48:34 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>99C17403-DF7D-4CE3-8AFE-DC164A00F900</newElementsIDs>
+<usedAttributes>
+<attributeRef>99C17403-DF7D-4CE3-8AFE-DC164A00F900</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

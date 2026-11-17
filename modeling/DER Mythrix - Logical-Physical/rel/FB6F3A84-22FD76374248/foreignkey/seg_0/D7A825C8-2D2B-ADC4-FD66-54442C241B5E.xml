@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D7A825C8-2D2B-ADC4-FD66-54442C241B5E" containerWithKeyObject="681BAAA7-AACD-C7E6-4622-215DDBD0DBCD" localFKIndex="B3D6F7B5-3772-9A39-03E1-2EE3FCAC65AC" name="fk_sales_order_partner">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Cada PARTNER pode ter um ou vários SALES_ORDER associados.
+Cada SALES_ORDER deve ter um e somente um PARTNER.]]></comment>
+<generatorID>3C949D82-B508-2F36-1995-F4324E8010EB</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>PARTNER</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>219158F0-2435-2195-087A-0A53F317F70B</referredTableID>
+<keyObject>7EBF7F0F-BA41-AAE5-FB10-C033A61207A1</keyObject>
+<referredKeyID>7EBF7F0F-BA41-AAE5-FB10-C033A61207A1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

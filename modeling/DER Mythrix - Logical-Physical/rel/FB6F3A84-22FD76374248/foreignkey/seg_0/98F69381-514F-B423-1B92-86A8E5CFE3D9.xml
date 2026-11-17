@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="98F69381-514F-B423-1B92-86A8E5CFE3D9" containerWithKeyObject="681BAAA7-AACD-C7E6-4622-215DDBD0DBCD" localFKIndex="6E32D0E6-ED3F-597C-BFC2-3FA1A4F129EB" name="fk_sales_order_employee">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Cada EMPLOYEE pode realizar um ou vários SALES_ORDER.
+Cada SALES_ORDER deve ser realizada por um e somente um EMPLOYEE.]]></comment>
+<generatorID>FA758DBB-0CA5-0D76-2090-8D6041CE5043</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>EMPLOYEE</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>A0925B92-B327-0BE7-1903-3CADEE069B18</referredTableID>
+<keyObject>15B1AC92-3F3E-1081-D30C-2537F98648F9</keyObject>
+<referredKeyID>15B1AC92-3F3E-1081-D30C-2537F98648F9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

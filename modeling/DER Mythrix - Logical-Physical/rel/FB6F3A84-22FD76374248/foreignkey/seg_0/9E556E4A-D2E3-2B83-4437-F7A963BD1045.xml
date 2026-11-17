@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9E556E4A-D2E3-2B83-4437-F7A963BD1045" containerWithKeyObject="10EC4B03-CCB5-63B4-7D9B-AA154A0B8F27" localFKIndex="29287207-0D3F-427B-E575-A82A0DC6BD23" name="fk_supplier_partner">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Cada PARTNER pode ser um e somente um SUPPLIER.
+Cada SUPPLIER deve ser um e somente um PARTNER.]]></comment>
+<generatorID>64F88302-5FA4-E5D5-A664-066EB4F60E08</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>PARTNER</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>219158F0-2435-2195-087A-0A53F317F70B</referredTableID>
+<keyObject>7EBF7F0F-BA41-AAE5-FB10-C033A61207A1</keyObject>
+<referredKeyID>7EBF7F0F-BA41-AAE5-FB10-C033A61207A1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

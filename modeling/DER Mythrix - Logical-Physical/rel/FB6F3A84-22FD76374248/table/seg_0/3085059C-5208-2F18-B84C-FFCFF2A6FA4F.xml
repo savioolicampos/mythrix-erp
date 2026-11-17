@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3085059C-5208-2F18-B84C-FFCFF2A6FA4F" name="SALES_CHANNEL">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Canais utilizados para comercialização de produtos e serviços.]]></comment>
+<generatorID>61EA26EC-4A29-2ACC-E6D7-A6B9C1C84EB7</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>SALES_CHANNEL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="DB2B674F-F11F-99A2-E40D-E43B4600BAA0">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do canal de venda.]]></comment>
+<generatorID>63B97CF2-7366-32D8-BFCD-303815FAD265</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="channel" id="D7BEFCDA-3812-BA01-DE16-422450773432">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Nome do canal de venda.]]></comment>
+<generatorID>BB1DABC5-8589-FBAC-32F2-CEF4C2F7FD58</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8BF3AA44-F8D7-AF1F-377A-72B3891A275C" name="pk_sales_channel">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="DB2B674F-F11F-99A2-E40D-E43B4600BAA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2883BB24-7AA9-C468-D47F-BFE36B75AF6A" name="uq_sales_channel_channel">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-22 15:57:20 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7BEFCDA-3812-BA01-DE16-422450773432"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

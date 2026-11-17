@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6F323A8-D188-2426-1B9C-6835277F44F6" name="SALES_CHANNEL_ATTRIBUTE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Valores de atributos personalizados associados a cada canal de venda.]]></comment>
+<generatorID>3A81EBCB-64AE-B189-C421-6737659AAB59</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>SALES_CHANNEL_ATTRIBUTE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="channel_id" id="C6653A6F-41E6-B94D-30B8-3B6D29EA3CBC">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador do canal de venda.]]></comment>
+<generatorID>4D739205-8DAC-10E3-8310-7FBFFBE75FC5</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45B0467F-0FF2-9E6F-CC4D-804EB617E068" referredColumn="DB2B674F-F11F-99A2-E40D-E43B4600BAA0"/>
+</associations>
+</Column>
+<Column name="attribute_id" id="D4D0DD22-65AB-2FC8-8213-4B418D5DCFD8">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador do atributo.]]></comment>
+<generatorID>15B70514-70E2-14DC-271E-3A830FFFC096</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EE7EB0A-F6E4-C55E-3C69-AE328CB2396E" referredColumn="86C2BA1C-B504-DE3F-4762-C352C023F2EA"/>
+</associations>
+</Column>
+<Column name="value" id="C2AF9FDA-91C4-1F0C-BA1B-B5B48C102101">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Valor da caracteística adicional do canal de venda.]]></comment>
+<generatorID>888AECD7-0BDD-B707-2C72-CDF6C5897EB6</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00135633-1D81-1694-2027-3DBC73CA73D2" name="pk_sales_channel_attribute">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>D59191B9-62B0-06EB-EAEF-790BC112153B</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6653A6F-41E6-B94D-30B8-3B6D29EA3CBC"/>
+<colUsage columnID="D4D0DD22-65AB-2FC8-8213-4B418D5DCFD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B70F46E4-EDF7-2560-19AC-EEEA098EEC40" name="fk_sales_channel_attribute_sales_channel">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>E7D29E20-6697-3C48-026F-C7FFF5CCDBFD</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6653A6F-41E6-B94D-30B8-3B6D29EA3CBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C72D76DC-3205-97A7-DF6F-68BC473BE415" name="fk_sales_channel_attribute_attribute">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>8E76A928-C3A6-9AE5-B826-2E6195BBE3D8</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4D0DD22-65AB-2FC8-8213-4B418D5DCFD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

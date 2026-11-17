@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_service_item" directorySegmentName="seg_0" id="4EDDED1B-0AFC-CD28-0E77-BCE4414BC335">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada ITEM pode ser um e somente um SERVICE.
+Cada SERVICE deve ser um e somente um ITEM.]]></comment>
+<generatorID>375B5F89-82F2-66C2-03E0-E6E2543A8550</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<dominantRole>ACDCB589-02ED-9C8B-5129-D978B78B7539</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ACDCB589-02ED-9C8B-5129-D978B78B7539</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>EA8EFC61-E282-3CD2-9B6A-557495E6B586</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

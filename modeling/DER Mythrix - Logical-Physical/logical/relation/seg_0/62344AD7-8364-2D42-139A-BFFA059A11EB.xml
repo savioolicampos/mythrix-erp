@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_asset_document" directorySegmentName="seg_0" id="62344AD7-8364-2D42-139A-BFFA059A11EB">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada DOCUMENT pode estar associado a um ou vários ASSET.
+Cada ASSET pode ter um e somente um DOCUMENT.]]></comment>
+<generatorID>A6B70903-3DF0-415C-74C9-A79B1B79669B</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<sourcePk>A0E72AC3-32B8-5A0E-B52C-529A7066226D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0EC9C893-EBE7-8880-2D1E-4D94C72A01E3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>74080B8C-ECA8-D22D-1E1E-92CE5E6B90D5</targetEntity>
+<transferable>true</transferable>
+</Relation>

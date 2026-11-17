@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0925B92-B327-0BE7-1903-3CADEE069B18" name="EMPLOYEE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Dados profissionais e vínculo empregatício dos parceiros.]]></comment>
+<generatorID>DCB82F3D-BAC8-96C3-C1F3-A6BA283B71CD</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>EMPLOYEE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A25E04C9-C2F1-90FD-11BE-0814E07A61D3">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do empregado.]]></comment>
+<generatorID>8BC2E0FD-37F7-BD7F-981D-34A4D8504BBB</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4F0B3F2-23AD-2A38-2F5F-7A8727913B1A" referredColumn="1F643048-052F-D2A4-4050-BBE4F58BA582"/>
+</associations>
+</Column>
+<Column name="birth_date" id="40344E5B-4ACF-4FFD-BB84-87079051A7AF">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Data de nascimento do empregado.]]></comment>
+<generatorID>0B78C45B-7E35-D92C-B4FC-69C37BCA01BB</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sex" id="866A8E22-6E7C-C1EA-2B30-EC7CAA532A43">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Sexo do empregado: M=Male, F=Female.]]></comment>
+<generatorID>DAC03E08-D14E-2213-5CE1-B5A129C698EF</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="work_email" id="BC735D03-D27D-323F-B79F-7EC184365599">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[E-mail profissional do empregado.]]></comment>
+<generatorID>BCF49225-53A5-1E40-6F5A-55B86600DEB5</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254</dataTypeSize>
+<ownDataTypeParameters>254,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="work_phone" id="A1A1CCAC-3161-4273-FB51-BFF4638E505D">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Telefone profissional do empregado.]]></comment>
+<generatorID>F0267343-6983-2F42-8F87-B5CA72969DE8</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="BEA7BFDC-9965-A975-21D5-058AB81518BD">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Data/hora da última atualização do cadastro do empregado.]]></comment>
+<generatorID>4325CD44-7E1F-13EF-DCD2-B4C3E67AB60B</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_updated_info" id="76E1BC3F-C8B2-BA7B-99C1-90622E8E287C">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Estado anterior dos dados que foram alterados na última atualização do cadastro do empregado.]]></comment>
+<generatorID>15B923E6-C9DE-98BB-4F3C-1B5A2EE3581A</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15B1AC92-3F3E-1081-D30C-2537F98648F9" name="pk_employee">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A25E04C9-C2F1-90FD-11BE-0814E07A61D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5F01ABB-26F4-6207-E229-2E2AB375D6A6" name="fk_employee_partner">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>71D55B3F-2F16-A7E5-B69F-531DC3AF3FB4</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A25E04C9-C2F1-90FD-11BE-0814E07A61D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

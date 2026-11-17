@@ -1,5 +1,5 @@
-SELECT * FROM partner;
 SELECT * FROM media_file;
+SELECT * FROM partner;
 SELECT * FROM customer;
 SELECT * FROM customer_legal_entity;
 SELECT * FROM supplier;

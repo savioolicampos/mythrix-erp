@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FEB8BA82-D376-8ED8-8D20-7DF4DD171EBB" name="PRODUCT_CATEGORY">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Categorias associadas aos produtos.]]></comment>
+<generatorID>14C04715-5BC8-554E-6757-23A19C7B2112</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>PROD_CATEGORY</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D970466B-474C-74D6-9E67-22C0B94BBABA">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único da categoria do produto.]]></comment>
+<generatorID>4EC798EB-1A52-C521-32F5-60FEF96A27AA</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category" id="005124C6-D858-2320-C939-86F7D6292984">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Nome/descrição da categoria do produto.]]></comment>
+<generatorID>0AB83BBF-34C8-97A6-D06F-B441FDBF971E</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB543C68-A6E8-3AED-BD10-26B08B52DEB3" name="pk_product_category">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D970466B-474C-74D6-9E67-22C0B94BBABA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="948FDF0D-BE76-D298-71A1-2835733F3FB6" name="uq_product_category_category">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-14 15:13:43 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="005124C6-D858-2320-C939-86F7D6292984"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
