@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12E30E71-8524-0DBA-88A2-C7FDEA9D507E" name="CUSTOMER">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Clientes pessoa física.]]></comment>
+<generatorID>5F5A46D1-A271-815D-9752-778B582EF3C1</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CUSTOMER</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="FDACD67B-0E6A-38E2-3334-38D8A9E40BB0">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Identificador único do cliente.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="birth date" id="85E47EBA-0774-A0CD-C946-14B1A616ADA7">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Data de nascimento do cliente.]]></comment>
+<generatorID>33A7FB12-4A16-2C9D-3527-036BB1ED3536</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sexo" id="20515BDE-5019-1E7B-922B-678E355FCFF3">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Sexo do cliente: M=Male, F=Female.]]></comment>
+<generatorID>2BC65618-C3A3-791A-11D9-813910BF394B</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="updated at" id="CC9EACBD-4EC7-F48F-40F8-84742C089B56">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Data/hora da última atualização do cadastro do cliente.]]></comment>
+<generatorID>84532DE1-0D93-367B-75A7-2106D6D58B8B</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last updated info" id="C06DE1AF-C730-6816-3437-298EDB27DDE4">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Estado anterior dos dados que foram alterados na última atualização do cadastro de clientes.]]></comment>
+<generatorID>70B5EE14-BF3B-B70F-8087-174B74869FEF</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F996166C-7A64-56AA-9F7E-F67F4F78DB78" name="pk customer">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<generatorID>2229DC56-03B5-918B-F464-CE7C00515AFE</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FDACD67B-0E6A-38E2-3334-38D8A9E40BB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

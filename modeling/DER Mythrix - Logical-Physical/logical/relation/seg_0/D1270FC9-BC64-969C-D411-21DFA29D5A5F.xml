@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_sales_channel_attribute_attribute" directorySegmentName="seg_0" id="D1270FC9-BC64-969C-D411-21DFA29D5A5F">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada ATTRIBUTE pode ter um ou vários SALES_C_A associados.
+Cada SALES_CHANNEL_ATTRIBUTE deve ter um e somente um ATTRIBUTE associado.]]></comment>
+<generatorID>5EE7EB0A-F6E4-C55E-3C69-AE328CB2396E</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1AA24C50-0DD6-080E-F009-A29AD636AF8D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AFD87A12-DC0C-F632-F6AF-84F036F89A26</targetEntity>
+<transferable>true</transferable>
+</Relation>

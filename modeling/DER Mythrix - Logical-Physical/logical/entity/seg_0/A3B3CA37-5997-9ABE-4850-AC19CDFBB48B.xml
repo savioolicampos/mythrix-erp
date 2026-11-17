@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A3B3CA37-5997-9ABE-4850-AC19CDFBB48B" name="MEDIA FILE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Metadados dos arquivos armazenados..]]></comment>
+<generatorID>503EE0E9-2CE0-E47E-E302-23E5A302E0F1</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>MEDIA_FILEL</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="3C3DE41D-A13C-5078-E447-7CED77D973E5">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Identificador único do arquivo de mídia.]]></comment>
+<generatorID>672DF24F-DE75-6207-F106-199B32214E09</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="storage key" id="AB0B94C6-D168-5DA4-612D-5C38C156BD80">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Localização do arquivo no sistema de armazenamento.]]></comment>
+<generatorID>A707135E-28BE-801B-2234-B8ACE48F1573</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="original filename" id="673FEC70-D293-CACE-AAA7-2AED2F8346DA">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Nome original do arquivo enviado.]]></comment>
+<generatorID>FA06E620-4ACE-1664-E624-A9234CCAE135</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="content type" id="25BBE612-A695-769B-D13D-5EBCEDE5649D">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Tipo de mídia do arquivo, conforme seu formato.]]></comment>
+<generatorID>19D0124D-3679-698C-A7E1-86C3D3C27333</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="size bytes" id="F490934D-CFFE-6DC1-8B2F-1DD351CCF0B7">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Tamanho do arquivo armazenado em bytes.]]></comment>
+<generatorID>DA85B750-DAF0-565F-5C96-31175817541C</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created at" id="D9715B9E-E919-D31E-BEF5-6D742B894B95">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Data/hora de criação do registro do arquivo de mídia.]]></comment>
+<generatorID>F8E72867-8571-944E-3009-A1015B87ECC4</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E688C5A-56D0-2FF1-653A-5443DBB59AF8" name="uq media file storage key">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<generatorID>252BD0F9-2117-7527-9D06-779230CE5EBA</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>AB0B94C6-D168-5DA4-612D-5C38C156BD80</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="681BAAA7-AACD-C7E6-4622-215DDBD0DBCD" name="SALES_ORDER">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Ordens de venda de produtos e serviços realizados aos parceiros.]]></comment>
+<generatorID>73168B49-7A83-4362-764E-C0DDAF2AB5A4</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>SALES_ORDER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="DE62E890-00ED-8666-4112-2D1810BB8C56">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único da ordem de venda.]]></comment>
+<generatorID>ED12A48F-B743-E73F-350E-6D678D043C9E</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70058B26-3BDB-C411-55DF-4A6E41FF708B" referredColumn="9E0460B4-EEA9-4F60-6425-BE2CD939FF1D"/>
+</associations>
+</Column>
+<Column name="order_date" id="1537190E-387A-1869-6224-E50722C864D3">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Data/hora de criação da ordem de venda.]]></comment>
+<generatorID>8F8F9831-0DDF-4E22-74BC-24EDBC4145B2</generatorID>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="198710DC-E2CD-F137-67AA-4DD40E5B49F7">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-22 17:12:21 UTC</createdTime>
+<comment><![CDATA[Situação da ordem de compra: D=Draft, C=Completed, X=Cancelled.]]></comment>
+<notes><![CDATA[DEFAULT = D]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id" id="7A90EF6A-0012-012A-43C9-4C3B7D7FE3F5">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 18:41:26 UTC</createdTime>
+<comment><![CDATA[Identificador do empregado responsável pela ordem de venda.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="98F69381-514F-B423-1B92-86A8E5CFE3D9" referredColumn="A25E04C9-C2F1-90FD-11BE-0814E07A61D3"/>
+</associations>
+</Column>
+<Column name="partner_id" id="ED57C052-D79E-6B5E-2407-9EB3C2466E0F">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 18:43:15 UTC</createdTime>
+<comment><![CDATA[Identificador do parceiro comprador.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7A825C8-2D2B-ADC4-FD66-54442C241B5E" referredColumn="1F643048-052F-D2A4-4050-BBE4F58BA582"/>
+</associations>
+</Column>
+<Column name="channel_id" id="CBB4A906-9945-C516-AB8D-DE4724F02177">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 18:36:32 UTC</createdTime>
+<comment><![CDATA[Identificador do canal de venda.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B6B2C456-D854-E7BA-78FB-56A58BD651F4" referredColumn="DB2B674F-F11F-99A2-E40D-E43B4600BAA0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A591C62-D13D-0CE0-7C37-FCDB78A03AF8" name="pk_sales_order">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="DE62E890-00ED-8666-4112-2D1810BB8C56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E32D0E6-ED3F-597C-BFC2-3FA1A4F129EB" name="fk_sales_order_employee">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>FA758DBB-0CA5-0D76-2090-8D6041CE5043</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A90EF6A-0012-012A-43C9-4C3B7D7FE3F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3D6F7B5-3772-9A39-03E1-2EE3FCAC65AC" name="fk_sales_order_partner">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>3C949D82-B508-2F36-1995-F4324E8010EB</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED57C052-D79E-6B5E-2407-9EB3C2466E0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C6F94ED-272B-DFBC-3679-132B5A6EE2BE" name="fk_sales_order_sales_channel">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>2EDC3D31-D7B7-6B62-24D6-7FB842F203CE</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBB4A906-9945-C516-AB8D-DE4724F02177"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="949487FE-9DD2-4C60-A097-11B81BD00C51" name="fk_sales_order_document">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:49:06 UTC</createdTime>
+<generatorID>5C40E401-CB73-27A5-1652-E75B319F1432</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE62E890-00ED-8666-4112-2D1810BB8C56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

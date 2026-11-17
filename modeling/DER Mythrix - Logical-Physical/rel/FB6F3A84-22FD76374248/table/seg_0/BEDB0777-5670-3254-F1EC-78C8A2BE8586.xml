@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BEDB0777-5670-3254-F1EC-78C8A2BE8586" name="DOCUMENT">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:34:12 UTC</createdTime>
+<comment><![CDATA[Documentos para movimentações do sistema.]]></comment>
+<generatorID>7F01E31B-A449-9F16-7F20-B79648AB3981</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<ordsAlias>servicev1</ordsAlias>
+<abbreviation>DOCUMENT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9E0460B4-EEA9-4F60-6425-BE2CD939FF1D">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:34:12 UTC</createdTime>
+<comment><![CDATA[Identificador único do documento.]]></comment>
+<generatorID>CE8F2005-55E6-30E2-C05D-741B1A362EEC</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="document_type" id="A191B297-8CC1-8BF3-B3BE-C994CD189872">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 18:03:34 UTC</createdTime>
+<comment><![CDATA[Tipo do documento: SO=Sales Order, PO=Purchase Order.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="AB07EB2E-0E09-7FF9-6109-9BE5E4C8F6CA">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:46:55 UTC</createdTime>
+<comment><![CDATA[Data/hora da criação do documento.]]></comment>
+<notes><![CDATA[DEFAULT = Data/hora atual]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8E33775C-5AB0-3201-FC55-77E07B5FD5B8" name="pk_document">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:34:12 UTC</createdTime>
+<generatorID>5C40E401-CB73-27A5-1652-E75B319F1432</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E0460B4-EEA9-4F60-6425-BE2CD939FF1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

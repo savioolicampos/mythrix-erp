@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6B70903-3DF0-415C-74C9-A79B1B79669B" containerWithKeyObject="608E2285-620B-713E-6F78-22899DF0ADE4" localFKIndex="E23C8708-813C-E895-1EC9-3F6C5235C776" name="fk_asset_document">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:49:29 UTC</createdTime>
+<comment><![CDATA[Cada DOCUMENT pode estar associado a um ou vários ASSET.
+Cada ASSET pode ter um e somente um DOCUMENT.]]></comment>
+<generatorID>5C40E401-CB73-27A5-1652-E75B319F1432</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<referredTableLongName>DOCUMENT</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>BEDB0777-5670-3254-F1EC-78C8A2BE8586</referredTableID>
+<keyObject>8E33775C-5AB0-3201-FC55-77E07B5FD5B8</keyObject>
+<referredKeyID>8E33775C-5AB0-3201-FC55-77E07B5FD5B8</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

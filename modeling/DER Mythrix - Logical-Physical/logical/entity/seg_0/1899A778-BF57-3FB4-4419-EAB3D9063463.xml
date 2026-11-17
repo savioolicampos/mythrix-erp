@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1899A778-BF57-3FB4-4419-EAB3D9063463" name="ITEM TYPE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Tipos que classificam um item ou determinam seu estado.]]></comment>
+<generatorID>45F3A582-F127-BD15-426C-F1E9F1985B39</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ITEM_TYPE</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="381CA54C-6A95-04FC-0A14-35C37EDB62C3">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Identificador único do tipo do item.]]></comment>
+<generatorID>10486C03-0F83-3E8F-A678-4B25C0344D5B</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="392154D7-13CF-97BD-7B7E-64652DDABFCA">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Descrição do tipo do item.]]></comment>
+<generatorID>753F138E-974B-CA60-A650-935C5FF2BC86</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C4CDDDD-9CBD-AC11-1959-96A7DC2C4FD5" name="uq_item_type_type">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<generatorID>2BACA657-FB20-8E60-2505-0D35188BBDC1</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<newElementsIDs>392154D7-13CF-97BD-7B7E-64652DDABFCA</newElementsIDs>
+<usedAttributes>
+<attributeRef>392154D7-13CF-97BD-7B7E-64652DDABFCA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7C3BD2E1-044D-EF73-ED32-9431EBFC8787" name="pk_item_type">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:43:27 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>381CA54C-6A95-04FC-0A14-35C37EDB62C3</newElementsIDs>
+<usedAttributes>
+<attributeRef>381CA54C-6A95-04FC-0A14-35C37EDB62C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30591591-DD00-03FF-6F7A-CB3BCA8F3321" name="ATTRIBUTE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Características adicionais que podem ser associadas aos itens.]]></comment>
+<generatorID>B4D53F60-7CA4-5D3C-C998-263D379AEDCF</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>ATTRIBUTE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="86C2BA1C-B504-DE3F-4762-C352C023F2EA">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do atributo.]]></comment>
+<generatorID>D718A384-4F53-4B2E-FA69-931C4AA91C92</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attribute" id="0F16454C-C745-7BCD-1359-9A9842942B09">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Nome do atributo adicional.]]></comment>
+<generatorID>A597DB8B-EA99-E7B3-D219-EBE61F445A66</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_type" id="9CFF46D1-4639-9450-2AFA-466CF497C0C3">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-22 18:17:34 UTC</createdTime>
+<comment><![CDATA[Tipo do dado do atributo adicional.]]></comment>
+<notes><![CDATA[DEFAULT = TEXT]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80388602-F846-1756-846B-16987380DE63" name="pk_attribute">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="86C2BA1C-B504-DE3F-4762-C352C023F2EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F7A1A67-E978-04B4-FB2E-2756F5890220" name="uq_attribute_attribute">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-22 17:54:41 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F16454C-C745-7BCD-1359-9A9842942B09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

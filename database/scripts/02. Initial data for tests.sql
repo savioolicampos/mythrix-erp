@@ -21,13 +21,13 @@ INSERT INTO partner (
     email_opt_in,
     whatsapp_opt_in,
     sms_opt_in,
-    media_file,
+    media_file_id,
     last_updated_info
 )
 VALUES
-	('Sávio Oliveira Campos', '38783300066', 'CPF', 'savio@gmail.com', 'savio2@gmail.com', '61985746982', '61984563762', 'NP', 'Y', 'Y', 'N', 11, NULL),
-	('Mythrix Personalizados', '31882207000160', 'CNPJ', 'saviocampos@mythrix.com.br', NULL, '61984563762', NULL, 'LE', 'Y', 'Y', 'N', 7, NULL),
-    ('Personalizações LTDA', '75772178000150', 'CNPJ', 'contato@personalizacoes.com.br', NULL, '61996358472', NULL, 'LE', 'Y', 'Y', 'N', NULL, NULL);
+	('Sávio Oliveira Campos', '38783300066', 'CPF', 'savio@gmail.com', 'savio2@gmail.com', '61985746982', '61984563762', 'NP', TRUE, TRUE, FALSE, 11, NULL),
+	('Mythrix Personalizados', '31882207000160', 'CNPJ', 'saviocampos@mythrix.com.br', NULL, '61984563762', NULL, 'LE', TRUE, TRUE, FALSE, 7, NULL),
+    ('Personalizações LTDA', '75772178000150', 'CNPJ', 'contato@personalizacoes.com.br', NULL, '61996358472', NULL, 'LE', TRUE, TRUE, FALSE, NULL, NULL);
     
 INSERT INTO customer (
 	id,

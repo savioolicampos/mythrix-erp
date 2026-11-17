@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91AB0007-9A6E-0EF8-FAE3-5EBCE15470B0" name="STOCK_MOVEMENT">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Movimentação de itens do estoque.]]></comment>
+<generatorID>382A6A67-E4A1-87C6-4855-25A7CE7E277A</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>STOCK_MOVE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="891E6FAB-A525-14E3-3352-3895C01037C6">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único da movimentação de estoque.]]></comment>
+<generatorID>6BDA5245-FCFA-5E57-B5C9-14DB512FEE55</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_id" id="5F529D7E-1764-C0E0-2854-55BD0D48999A">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:55:49 UTC</createdTime>
+<comment><![CDATA[Id do controle de estoque.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B31E79C-08FE-4635-EDDC-073DDB6BF9E5" referredColumn="53DCD50C-804C-23D6-6DB5-13BC59CCD95D"/>
+</associations>
+</Column>
+<Column name="document_id" id="A32466CD-4890-745A-7CF2-15EE6FCAFEAE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:49:20 UTC</createdTime>
+<comment><![CDATA[Id do documento que gerou a movimentação no estoque.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05F0E93D-95D8-F931-0C7F-54CD518FC4B2" referredColumn="9E0460B4-EEA9-4F60-6425-BE2CD939FF1D"/>
+</associations>
+</Column>
+<Column name="type" id="EB1EF335-3A4E-2E3A-F51E-240F9012485F">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Tipo de movimentação de estoque: IN=Entrada, OUT=Saída.]]></comment>
+<generatorID>9319113F-F42F-C9D4-7065-67FEB0E310E8</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="3A25B496-2416-060D-42B5-D40DDA7E92ED">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Quantidade de itens movimentados do estoque.]]></comment>
+<generatorID>3FDB964D-882B-1562-244D-CB4AD98642D2</generatorID>
+<notes><![CDATA[Essa quantidade pode ser dinamicamente gerada dependendo do tipo de movimentação que for gerado.]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movement_value" id="F8317243-CA94-E786-90FB-03A93EA1C8B5">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Valor relativo à quantidade de itens movimentados (R$).]]></comment>
+<generatorID>D79AD0B3-BAFC-7377-E8F5-F7BBF7D26929</generatorID>
+<notes><![CDATA[Esse valor deve ser calculado automaticamente considerando o valor unitário do item + a quantidade movimentada.]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movement_date" id="39C98FB8-8BFE-5503-2BF5-17B8525A44E1">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Data/hora da movimentação do item no estoque.]]></comment>
+<generatorID>CD3C2D0F-DA54-9CE9-7745-2ADAD9AF91B9</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9566E4E1-F6AA-85B3-7C03-98C7FCB212AF" name="pk_stock_movement">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>F9F3167B-49A4-0340-74A7-0C16B1F4CB38</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="891E6FAB-A525-14E3-3352-3895C01037C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7C2DFDC-C81A-C0DE-1D1D-7B70569C6D1B" name="fk_stock_movement_stock">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>13097270-4163-A38D-FE07-6F874D22AC76</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F529D7E-1764-C0E0-2854-55BD0D48999A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0663A60A-FF12-6082-FDED-24FAF5613F15" name="fk_stock_movement_document">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-16 16:49:20 UTC</createdTime>
+<generatorID>5C40E401-CB73-27A5-1652-E75B319F1432</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A32466CD-4890-745A-7CF2-15EE6FCAFEAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

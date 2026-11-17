@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_purchase_order_document" directorySegmentName="seg_0" id="2671A91B-A6AC-33AD-1CF1-14A57E883134">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada DOCUMENT pode ser um e somente um PURCHASE_ORDER.
+Cada PURCHASE_ORDER deve ser um e somente um DOCUMENT.]]></comment>
+<generatorID>FD3A63C4-C7BC-9A71-82A4-D3FA807CC9D9</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<sourcePk>A0E72AC3-32B8-5A0E-B52C-529A7066226D</sourcePk>
+<dominantRole>0EC9C893-EBE7-8880-2D1E-4D94C72A01E3</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0EC9C893-EBE7-8880-2D1E-4D94C72A01E3</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>A600AF07-527E-9DC3-6CC2-495539DC3B8C</targetEntity>
+<transferable>true</transferable>
+</Relation>

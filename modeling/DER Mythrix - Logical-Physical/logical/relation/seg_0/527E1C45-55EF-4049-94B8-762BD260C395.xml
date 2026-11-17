@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_purchase_order_item_item" directorySegmentName="seg_0" id="527E1C45-55EF-4049-94B8-762BD260C395">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada ITEM pode ter um ou vários PURCHASE_ORDER_ITEM associados.
+Cada PURCHASE_ORDER_ITEM deve ter um e somente um ITEM.]]></comment>
+<generatorID>06DA0B9A-7642-8E11-1F8B-54AE29BE7636</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ACDCB589-02ED-9C8B-5129-D978B78B7539</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A12DFEF5-484D-7C89-1430-4D599CF50934</targetEntity>
+<transferable>true</transferable>
+</Relation>

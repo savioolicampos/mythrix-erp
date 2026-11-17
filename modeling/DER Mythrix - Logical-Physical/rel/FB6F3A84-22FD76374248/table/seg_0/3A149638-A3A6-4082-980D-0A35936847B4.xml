@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A149638-A3A6-4082-980D-0A35936847B4" name="SERVICE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Serviços associados ao item.]]></comment>
+<generatorID>7F01E31B-A449-9F16-7F20-B79648AB3981</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>SERVICE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0FDF5664-8A50-9B0E-E6DC-DBF6A03F8F57">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do serviço.]]></comment>
+<generatorID>CE8F2005-55E6-30E2-C05D-741B1A362EEC</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="375B5F89-82F2-66C2-03E0-E6E2543A8550" referredColumn="2C055E90-B178-8724-42A7-8C128707E19C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A7D24DF-021E-BD12-28C8-4E6E69DE5407" name="pk_service">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>5C40E401-CB73-27A5-1652-E75B319F1432</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FDF5664-8A50-9B0E-E6DC-DBF6A03F8F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A77F7A19-712B-70C2-01A8-0480648014AA" name="fk_service_item">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>BEF1F799-EFBA-1B6A-6AD2-2A26CFC5667F</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FDF5664-8A50-9B0E-E6DC-DBF6A03F8F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_stock_movement_document" directorySegmentName="seg_0" id="9836C6D7-6F1B-DAEE-30B5-B5C2D2F99F47">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<generatorID>05F0E93D-95D8-F931-0C7F-54CD518FC4B2</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<sourcePk>A0E72AC3-32B8-5A0E-B52C-529A7066226D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0EC9C893-EBE7-8880-2D1E-4D94C72A01E3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D522FEC7-F978-7CF7-CBD4-20BFFAFA5300</targetEntity>
+<transferable>true</transferable>
+</Relation>

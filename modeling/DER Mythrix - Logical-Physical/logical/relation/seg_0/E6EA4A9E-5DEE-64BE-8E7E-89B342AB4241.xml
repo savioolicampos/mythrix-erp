@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_sales_channel_attribute_sales_channel" directorySegmentName="seg_0" id="E6EA4A9E-5DEE-64BE-8E7E-89B342AB4241">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada SALES_CHANNEL pode ter um ou vários SALES_C_A associados.
+Cada SALES_CHANNEL_ATTRIBUTE deve ter um e somente um SALES_CHANNEL associado.]]></comment>
+<generatorID>45B0467F-0FF2-9E6F-CC4D-804EB617E068</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>87E89504-DE4A-CDF6-7E77-AB7FBBFB4D29</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AFD87A12-DC0C-F632-F6AF-84F036F89A26</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

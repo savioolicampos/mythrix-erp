@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E71E7250-6235-EEF3-5E8F-1C049226F7CC" name="ITEM_IMAGE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 15:53:25 UTC</createdTime>
+<comment><![CDATA[Imagens associadas aos itens cadastrados no sistema.]]></comment>
+<generatorID>61EA26EC-4A29-2ACC-E6D7-A6B9C1C84EB7</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<ordsAlias>sales_channelv1</ordsAlias>
+<abbreviation>ITEM_IMAGE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="item_id" id="2F8A980A-B53F-7C64-F109-D26A003F263A">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 15:53:25 UTC</createdTime>
+<comment><![CDATA[Identificador do item.]]></comment>
+<generatorID>63B97CF2-7366-32D8-BFCD-303815FAD265</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0EA682F-711A-F4B2-4555-CD77AB3B32F8" referredColumn="2C055E90-B178-8724-42A7-8C128707E19C"/>
+</associations>
+</Column>
+<Column name="media_file_id" id="47949555-0712-E808-5F29-97781BEFA3DE">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 15:53:25 UTC</createdTime>
+<comment><![CDATA[Identificador do arquivo de mídia.]]></comment>
+<generatorID>BB1DABC5-8589-FBAC-32F2-CEF4C2F7FD58</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5DE1E19A-BD2D-DFCC-56AD-4EADB6DCC427" referredColumn="672DF24F-DE75-6207-F106-199B32214E09"/>
+</associations>
+</Column>
+<Column name="display_order" id="29DF4C41-BD3B-4452-872E-6757D0BF1293">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:53:23 UTC</createdTime>
+<comment><![CDATA[Ordem de exibição da imagem em relação às demais imagens do item.]]></comment>
+<notes><![CDATA[DEFAULT = 0]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_primary" id="46BFE970-B9BA-A91B-5CDB-CD16D191895E">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:53:23 UTC</createdTime>
+<comment><![CDATA[Indica se a imagem está definida como principal para o item.]]></comment>
+<notes><![CDATA[DEFAULT = FALSE]]></notes>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_text" id="CF458C87-B39E-85CF-8E4A-933E443D4289">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:53:23 UTC</createdTime>
+<comment><![CDATA[Descrição textual do conteúdo da imagem para acessibilidade e identificação contextual.]]></comment>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E1DA3F6-D701-49F5-981F-F9992C5BBBAD" name="pk_item_image">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 15:53:25 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="2F8A980A-B53F-7C64-F109-D26A003F263A"/>
+<colUsage columnID="47949555-0712-E808-5F29-97781BEFA3DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49524722-380F-B8BA-8890-B9C9F4AFF28A" name="fk_item_image_media_file">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:54:31 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47949555-0712-E808-5F29-97781BEFA3DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A4D544E-34DF-C96C-37E9-622B215BCA71" name="fk_item_image_item">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-23 17:54:38 UTC</createdTime>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F8A980A-B53F-7C64-F109-D26A003F263A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

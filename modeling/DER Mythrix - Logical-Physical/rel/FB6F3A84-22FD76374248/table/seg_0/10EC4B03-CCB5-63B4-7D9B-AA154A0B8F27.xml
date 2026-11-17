@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10EC4B03-CCB5-63B4-7D9B-AA154A0B8F27" name="SUPPLIER">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Fornecedores: parceiros que fornecem produtos e serviços à empresa.]]></comment>
+<generatorID>CA23965E-B175-F50A-D5EB-9725BAD7A66E</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<abbreviation>SUPPLIER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5187352C-269F-B1F9-E001-A8743C1E69EC">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<comment><![CDATA[Identificador único do fornecedor.]]></comment>
+<generatorID>8C53CA33-8F2E-F5B0-E929-454ABBFD31AE</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E556E4A-D2E3-2B83-4437-F7A963BD1045" referredColumn="1F643048-052F-D2A4-4050-BBE4F58BA582"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8113C118-9F24-4D5E-B439-48725E6897E3" name="pk_supplier">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>5074B205-A6AF-0653-D765-B1B696E27157</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5187352C-269F-B1F9-E001-A8743C1E69EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29287207-0D3F-427B-E575-A82A0DC6BD23" name="fk_supplier_partner">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-12 17:43:57 UTC</createdTime>
+<generatorID>64F88302-5FA4-E5D5-A664-066EB4F60E08</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5187352C-269F-B1F9-E001-A8743C1E69EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

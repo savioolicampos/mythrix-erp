@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_product_product_category" directorySegmentName="seg_0" id="755A72C5-7B1B-4404-1E2A-1320C4F62B55">
+<createdBy>Sávio</createdBy>
+<createdTime>2026-10-27 23:35:13 UTC</createdTime>
+<comment><![CDATA[Cada PRODUCT deve ter um e somente um PRODUCT_CAREGORY.
+Cada PRODUCT_CATEGORY pode ter um ou vários PRODUCT associados.]]></comment>
+<generatorID>2F016EF0-4389-837B-A783-8B2861B98D02</generatorID>
+<ownerDesignName>DER Mythrix</ownerDesignName>
+<engineerTo>
+<item key="FB6F3A84-7F00-2D3A-486A-22FD76374248" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3DD56BC6-C412-D59E-5F48-8AA2CF9CE0B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>730CBD3A-0D80-24AF-714C-D8DA743ACE1A</targetEntity>
+<transferable>true</transferable>
+</Relation>
